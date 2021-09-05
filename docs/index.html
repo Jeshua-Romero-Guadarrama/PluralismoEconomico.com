@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+
+	<!-- 
+	//////////////////////////////////////////////////////
+	Democratizar la Ciencia de Datos Ciencia de Datos, Probabilidad, Estadística, Machine Learning, Econometría y Programación.
+	Diseñado y desarrollado por Jeshua Romero Guadarrama
+	Sitio web: http://JeshuaNomics.com/
+	Correo:    jeshua.romero@outlook.com
+	Twitter:   http://twitter.com/JeshuaNomics
+	Facebook:  https://www.facebook.com/JeshuaNomics
+	//////////////////////////////////////////////////////
+	-->
+
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Democratizar la Ciencia de Datos por Jeshua Romero Guadarrama</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">		
+    <meta name="description" content="Democratizar la Ciencia de Datos. Proyecto de divulgación científica con oportuno material formativo para el desarrollo de las habilidades que resultan indispensables en el mundo de la ciencia de datos."/>
+    <meta name="keywords" content="Ciencia de datos, Python, R, SQL, Análisis de datos, Limpieza de datos, Visualización de datos, API, Web Scraping, Probabilidad, Estadística, Aprendizaje automático."/>
+    <meta name="author" content="Jeshua Romero Guadarrama"/>
+		
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content=""/>
+	<meta name="twitter:image" content=""/>
+	<meta name="twitter:url" content=""/>
+	<meta name="twitter:card" content=""/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+	
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+	</script>
+	
+    <!-- Global apis (css.family) - Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i%7CRajdhani:400,600,700,300,400,700" rel="stylesheet">
+
+	<!-- Font Awesome -->
+	<link href='https://use.fontawesome.com/releases/v5.4.1/ccs/all.css' rel='stylesheet'/>
+	<script src="https://kit.fontawesome.com/5a49e034c4.js" crossorigin="anonymous"></script>
+	
+    <!-- Animate.css -->
+	<link rel="stylesheet" href="assets_main/css/main.css"/>
+
+    <!-- Favicon -->
+	<link rel="shortcut icon" href="favicon.png">
+    
+    <!-- Plugins Stylesheets -->
+    <link rel="stylesheet" href="assets_main/css/loader/loaders.css">
+    <link rel="stylesheet" href="assets_main/css/font-awesome/font-awesome.css">
+    <link rel="stylesheet" href="assets_main/css/bootstrap.css">
+    <link rel="stylesheet" href="assets_main/css/aos/aos.css">
+    <link rel="stylesheet" href="assets_main/css/swiper/swiper.css">
+    <link rel="stylesheet" href="assets_main/css/lightgallery.min.css">
+
+    <!-- Template Stylesheet -->
+    <link rel="stylesheet" href="assets_main/css/style.css">
+    
+    <!-- Responsive Stylesheet -->
+    <link rel="stylesheet" href="assets_main/css/responsive.css">
+</head>
+
+<body>
+
+    <!-- Loader Start -->
+    <div class="css-loader">
+        <div class="loader-inner line-scale d-flex align-items-center justify-content-center">
+        </div>
+    </div>
+
+    <!-- Loader End -->
+    <!-- Header Start -->
+    <header class="position-absolute w-100">
+        <div class="container">
+            <nav class="text-center top-header d-none d-sm-flex justify-content-between align-items-center d-flex aic">
+                <a class="navbar-brand" href="index.html" align="center"><b><h2>Democratizar la Ciencia de Datos</h2></b>por Jeshua Romero Guadarrama</a>
+                <ul class="nav social d-none d-md-flex">
+                    <li><a href="https://www.linkedin.com/in/jeshua-romero-guadarrama/" rel="noopener noreferrer" target="_blank" title="linkedin" alt="linkedin" class="icon brands fa-lg"><i class="fab fa-linkedin-in"></i></a></li>		
+                    <li><a href="https://www.youtube.com/channel/UCY7f84mJGvMN7TF7XI4-Jgg/" rel="noopener noreferrer" target="_blank" title="youtube" alt="youtube" class="icon brands fa-lg"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://www.facebook.com/JeshuaNomics/" rel="noopener noreferrer" target="_blank" title="facebook" alt="facebook" class="icon brands fa-lg"><i class="fa fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com/jeshua_romero/" rel="noopener noreferrer" target="_blank" title="twitter" alt="twitter" class="icon brands fa-lg"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/jeshuaromeroguadarrama/" rel="noopener noreferrer" target="_blank" title="instagram" alt="instagram" class="icon brands fa-lg"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://github.com/JeshuaNomics/" rel="noopener noreferrer" target="_blank" title="github" alt="github" class="icon brands fa-lg"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.datascience.jeshuanomics.com/" rel="noopener noreferrer" target="_blank" title="JeshuaNomics" alt="JeshuaNomics" class="icon brands fa-lg"><i class="fas fa-rss"></i></a></li>
+                    <li><a href="mailto:jeshua.romero@outlook.com" rel="noopener noreferrer" target="_blank" title="correo" alt="correo" class="icon brands fa-lg"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://wa.me/5618357453?text=Mucho%20gusto%20Jeshua.%20El%20motivo%20del%20presente%20mensaje%20es%20porque%20estoy%20interesado%20en%20tu%20perfil%20profesional." rel="noopener noreferrer" target="_blank" title="whatsapp" alt="whatsapp" class="icon brands fa-lg"><i class="fab fa-whatsapp"></i></a></li>
+                </ul>
+            </nav>
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="group d-flex align-items-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <a href="https://www.linkedin.com/in/jeshua-romero-guadarrama/" rel="noopener noreferrer" target="_blank" title="linkedin" alt="linkedin" class="login-icon d-sm-none"><i class="fab fa-linkedin-in"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.youtube.com/channel/UCY7f84mJGvMN7TF7XI4-Jgg/" rel="noopener noreferrer" target="_blank" title="youtube" alt="youtube" class="login-icon d-sm-none"><i class="fab fa-youtube"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.facebook.com/JeshuaNomics/" rel="noopener noreferrer" target="_blank" title="facebook" alt="facebook"  class="login-icon d-sm-none"><i class="fa fa-facebook-f"></i></a>&nbsp;&nbsp;
+                    <a href="https://twitter.com/jeshua_romero/" rel="noopener noreferrer" target="_blank" title="twitter" alt="twitter" class="login-icon d-sm-none"><i class="fab fa-twitter"></i></a></a>&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/jeshuaromeroguadarrama/" rel="noopener noreferrer" target="_blank" title="instagram" alt="instagram" class="login-icon d-sm-none"><i class="fab fa-instagram"></i></a>&nbsp;&nbsp;
+                    <a href="https://github.com/JeshuaNomics/" rel="noopener noreferrer" target="_blank" title="github" alt="github" class="login-icon d-sm-none"><i class="fab fa-github"></i></a>&nbsp;&nbsp;
+                    <a href="https://www.datascience.jeshuanomics.com/" rel="noopener noreferrer" target="_blank" title="JeshuaNomics" alt="JeshuaNomics" class="login-icon d-sm-none"><i class="fa fa-leanpub"></i></a>&nbsp;&nbsp;
+                    <a href="mailto:jeshua.romero@outlook.com" rel="noopener noreferrer" target="_blank" title="correo" alt="correo" class="login-icon d-sm-none"><i class="fas fa-envelope"></i></a>&nbsp;&nbsp;
+                    <a href="https://wa.me/5618357453?text=Mucho%20gusto%20Jeshua.%20El%20motivo%20del%20presente%20mensaje%20es%20porque%20estoy%20interesado%20en%20tu%20perfil%20profesional." rel="noopener noreferrer" target="_blank" title="whatsapp" alt="whatsapp" class="login-icon d-sm-none"><i class="fab fa-whatsapp"></i></a>&nbsp;&nbsp;
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="https://www.paypal.com/donate?hosted_button_id=QTUWP9TF9GZRJ" rel="noopener noreferrer" target="_blank" title="donar" alt="donar" class="nav-link"><i class="fas fa-hand-holding-usd" aria-hidden="true"></i>&nbsp;&nbsp;Donar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Proyecto"><i class="fab fa-react"></i>  Poyecto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Jeshua"><i class="far fa-id-badge"></i> Jeshua</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Python"><i class="fab fa-python"></i> Python</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#R"><i class="fab fa-r-project"></i>  R</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#SQL"><i class="fas fa-database"></i>  SQL</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Machine Learning"><i class="fas fa-robot"></i> Machine Learning</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#Contacto"><i class="fas fa-id-card"></i>  Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Header End -->
+    <!-- Hero Start -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 offset-md-1 col-md-11">
+                    <br><br>
+                    <br><br>
+                    <div class="swiper-container hero-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h1 data-aos="fade-right" data-aos-delay="200">Trayectoria profesional<br>Ciencia de Datos con Python
+                                    </h1>
+                                    <p data-aos="fade-right" data-aos-delay="600" style="color:white">
+                                        Diseñada para principiantes con poca o ninguna experiencia en el campo de los datos,
+                                        <br>cuyo interés sea convertirse en científicos calificados y listos para trabajar.
+                                    </p>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="#Python" class="btn btn-primary">Ver más</a>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="Python.html" class="btn btn-primary">Empezar ahora</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h1 data-aos="fade-right" data-aos-delay="200">Trayectoria profesional<br>Ciencia de Datos con R
+                                    </h1>
+                                    <p data-aos="fade-right" data-aos-delay="600" style="color:white">
+                                        Diseñada para principiantes con poca o ninguna experiencia en el campo de los datos,
+                                        <br>cuyo interés sea convertirse en científicos calificados y listos para trabajar.
+                                    </p>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="#R" class="btn btn-primary">Ver más</a>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="R.html" class="btn btn-primary">Empezar ahora</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide-content d-flex align-items-center">
+                                <div class="single-slide">
+                                    <h1 data-aos="fade-right" data-aos-delay="200">Trayectoria profesional<br>Ingeniería de Datos con SQL
+                                    </h1>
+                                    <p data-aos="fade-right" data-aos-delay="600" style="color:white">
+                                        Diseñada para principiantes con poca o ninguna experiencia en el campo de los datos,
+                                        <br>cuyo interés sea convertirse en ingenieros calificados y listos para trabajar.
+                                    </p>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="#SQL" class="btn btn-primary">Ver más</a>
+                                    <a data-aos="fade-right" data-aos-delay="900" href="SQL.html" class="btn btn-primary">Empezar ahora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Add Control -->
+            <span class="arr-left"><i class="fa fa-angle-left"></i></span>
+            <span class="arr-right"><i class="fa fa-angle-right"></i></span>
+        </div>
+        <div class="texture">
+        </div>
+        <div class="diag-bg">
+        </div>
+    </section>
+
+    <!-- Hero End -->
+    <!-- Call To Action Start -->
+    <section class="cta" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="cta-content d-xl-flex align-items-center justify-content-around text-center text-xl-left">
+                <div class="content" data-aos="fade-right" data-aos-delay="200">
+                    <h2 align = "center">Democratizar la Ciencia de Datos</h2>
+                    <p align="center">El presente proyecto representa el inicio de una emocionante trayectoria profesional para cualquier  
+                        <br>persona interesada en un cambio de carrera o con la suficiente iniciativa para potenciar su trabajo,
+                        <br>ya sean profesionales de datos que busquen avanzar en su campo, estudiantes universitarios con 
+                        <br>un profundo interés en la ciencia de datos o simplemente personas que quieran adquirir nuevas
+                        <br>habilidades de manera dinámica mediante la solución de problemas prácticos del mundo real. 
+                        <br>¡Construyamos juntos tu primer portafolio en ciencia de datos!
+                    </p>
+                </div>
+                <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
+                    <a href="https://www.paypal.com/donate?hosted_button_id=QTUWP9TF9GZRJ" rel="noopener noreferrer" target="_blank" title="donar" alt="donar" class="btn btn-primary">Donar al proyecto</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action End -->
+    <!-- Services Start -->
+    <section class="services">
+        <div class="container">
+            <div class="title text-center">
+                <h6>Elige entre cientos de lecciones gratuitas en ciencia de datos para avanzar en tu carrera</h6>
+                <h1 class="title-blue">No se trata solo de lo que aprenderás, sino de cómo lo aplicarás</h1>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+                            <img class="mr-4" src="assets_main/images/service3.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>Aprendizaje dinámico</h5>
+                                <p>Aprende escribiendo y validando código, no viendo videos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                            <img class="mr-4" src="assets_main/images/service2.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>Nuevas habilidades</h5>
+                                <p>Adquiere y domina las habilidades en datos más demandadas en todo el mundo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+                            <img class="mr-4" src="assets_main/images/service1.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>Probar conocimientos</h5>
+                                <p>Ponte a prueba con docenas de ejercicios y problemas prácticos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                            <img class="mr-4" src="assets_main/images/service3.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>Aprendizaje moderno</h5>
+                                <p>Aplica metódicamente los conocimientos y habilidades recien adquiridos en proyectos reales con total confianza.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+                            <img class="mr-4" src="assets_main/images/service5.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>Desarrollar portafolio</h5>
+                                <p>Crea tus propios proyectos, sube tu trabajo de nivel y construye tu currículum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="media" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+                            <img class="mr-4" src="assets_main/images/service4.png" alt="Web Development">
+                            <div class="media-body">
+                                <h5>Relaciones colaborativas</h5>
+                                <p>Únete a nuestra comunidad, cuyo objetivo es la cooperación mútua para construir juntos tu nueva carrera en ciencia de datos.<p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services End -->
+    <!-- Featured Start -->
+    <section id="Proyecto" class="featured">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-delay="400" data-aos-duration="800">
+                    <div class="title">
+                        <h6 class="title-primary">Sobre Democratizar la Ciencia de Datos</h6>
+                        <h1 class="title-blue">Una obra holística, integrada de forma épica y gratuita.</h1>
+                    </div>
+                    <p align="justify"><b>Democratizar la Ciencia de Datos</b> es un proyecto de divulgación científica 
+                        creado por Jeshua Romero Guadarrama con
+                        oportuno material formativo para el desarrollo de las habilidades que resultan
+                        indispensables en el mundo de la ciencia de datos.</p>
+                    <div class="media-element d-flex justify-content-between">
+                        <div class="media">
+                            <i class="fa fa-magic mr-4"></i>
+                            <div class="media-body">
+                                <h5>Teoría</h5>
+                                <p align="justify">Aprende y domina la teoría estadística (descriptiva e inferencial), probabilística y econométrica necesaria para crear modelos que interpreten el mundo en el que vivimos.</p>
+                            </div>
+                        </div>
+                        <div class="media">
+                            <i class="fa fa-magic mr-4"></i>
+                            <div class="media-body">
+                                <h5>Práctica</h5>
+                                <p align="justify">Aprende a programar con ejercicios del mundo real, domina lenguajes como Python, R y SQL con el objetivo de construir un portafolio con proyectos dignos de un verdadero científico.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://www.paypal.com/donate?hosted_button_id=QTUWP9TF9GZRJ" rel="noopener noreferrer" target="_blank" title="donar" alt="donar" class="btn btn-primary">Donar al proyecto</a>
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+                    <div class="featured-img">
+                        <img class="featured-big" src="assets_main/images/Fondo1.png" alt="Featured 1">
+                        <img class="featured-small" src="assets_main/images/Fondo2.png" alt="Featured 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing End -->
+    <!-- Testimonial and Clients Start -->
+    <section id="Jeshua" class="testimonial-and-clients">
+        <div class="container">
+            <div class="testimonials">
+                <div class="swiper-container test-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center">
+                            <div class="row">
+                                <div class="offset-lg-1 col-lg-10">
+                                    <div class="test-img" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0"><img src="assets_main/images/perfil.png" alt="Testimonial 1"></div>
+                                    <h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" data-aos-offset="0">Jeshua Romero Guadarrama</h5>
+                                    <span data-aos="fade-up" data-aos-delay="400" data-aos-duration="600" data-aos-offset="0">Economista</span>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify">
+                                        La ortodoxia generalmente identifica a la economía como una ciencia exacta, racionalizando el comportamiento de las personas y el curso de acción a emprender con resultados previsibles. 
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        En contraste, la heterodoxia considera a la economía como una ciencia social, donde el comportamiento de los actores se caracteriza por su imprevisibilidad y donde las interpretaciones son subjetivas.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        En este contexto, me identifico con las corrientes heterodoxas como son la economía postkeynesiana, de la complejidad y postescasez, ya que enfatizan la forma en que la sociedad se organiza a partir de los procesos de producción, distribución y consumo de bienes y servicios. 
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        Distinguiendo a los individuos como actores que cooperan para el desarrollo de dichas actividades, en lugar de competir de forma desproporcionada, de manera individual (egoísta) y sin interacción con las estructuras sociales. 
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        Entre las diferencias deben destacarse los siguientes puntos:
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - La importancia de la incertidumbre, el tiempo histórico o no ergodicidad de los procesos económicos.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Las variables monetarias afectan a la economía "real" (producción, ocupación) tanto a corto como a largo plazo.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Rechazo de los modelos neoclásicos de equilibrio general.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - La economía capitalista no tiene una tendencia natural a volver a una situación de pleno empleo.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Rechazo a la base teórica de que la falta de pleno empleo se deba a la rigidez en los precios y salarios.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - La inversión fija es el elemento determinante del nivel de demanda agregada en una economía cerrada (o grande).
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Existencia de la incertidumbre knightiana; es decir, riesgo no medible y no computable.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <div class="row">
+                                <div class="offset-lg-1 col-lg-10">
+                                    <div class="test-img" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0"><img src="assets_main/images/perfil.png" alt="Testimonial 1"></div>
+                                    <h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" data-aos-offset="0">Jeshua Romero Guadarrama</h5>
+                                    <span data-aos="fade-up" data-aos-delay="400" data-aos-duration="600" data-aos-offset="0">Matemático</span>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify">
+                                        Las matemáticas ofrecen métodos y herramientas susceptibles de ser utilizadas en el análisis o resolución de problemas pertenecientes al área de las ciencias básicas o aplicadas (como son el cálculo, el álgebra lineal, las ecuaciones diferenciales, entre otras).
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        En este contexto, en las matemáticas aplicadas se procura el desarrollo de las matemáticas «hacia afuera»; es decir, su aplicación o transferencia hacia el resto de áreas. En menor grado «hacia dentro»; esto es, hacia el desarrollo de la matemática misma (caso de las matemáticas puras o elementales).
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        Muchos métodos matemáticos han resultado efectivos en el estudio de problemas propios de la física, química, biología, ingeniería, medicina, ciencias sociales, informática o ecología. 
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        De igual forma, se usan con frecuencia en distintas áreas tecnológicas para modelado, simulación y optimización de procesos o fenómenos.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        Las matemáticas son como un pulpo: tiene tentáculos que pueden tocar casi todos los temas. Al respecto, mientras algunos sujetos solo reciben un ligero toque, otros quedan atrapados como almejas entre dichos tentáculos. La ciencia de datos cae en la última categoría. 
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        Resulta importante mencionar que el estudio de las matemáticas me ha permitido desarrollar nuevas habilidades en la ciencia de datos, dado que he perfeccionado mis conocimientos teóricos en métodos cuantitativas; es decir, el uso de álgebra, estadística avanzada y probabilidad para hacer predicciones a partir de diferentes conjuntos de datos, muchas veces desordenados y dispares. 
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        El aprendizaje estadístico básico y el uso elemental de la probabilidad es un gran comienzo; sin embargo, llega un punto donde la ciencia de datos hace uso de algoritmos más complejos para realizar predicciones. Dichos algoritmos se denominan algoritmos de aprendizaje automático y existen literalmente cientos de ellos.      
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide text-center">
+                            <div class="row">
+                                <div class="offset-lg-1 col-lg-10">
+                                    <div class="test-img" data-aos="fade-up" data-aos-delay="0" data-aos-offset="0"><img src="assets_main/images/perfil.png" alt="Testimonial 1"></div>
+                                    <h5 data-aos="fade-up" data-aos-delay="200" data-aos-duration="600" data-aos-offset="0">Jeshua Romero Guadarrama</h5>
+                                    <span data-aos="fade-up" data-aos-delay="400" data-aos-duration="600" data-aos-offset="0">Científico de datos</span>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify">
+                                        La ciencia de datos es un campo interdisciplinario que involucra métodos científicos, procesos y sistemas para extraer conocimiento o un mejor entendimiento de datos en sus diferentes formas, ya sea estructurados o no estructurados, lo cual es una continuación de algunos campos de análisis de datos como la estadística, la minería de datos, el aprendizaje automático y la analítica predictiva.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        En este nuevo paradigma, los investigadores se apoyan de sistemas y procesos como son modelos, ecuaciones, algoritmos, así como evaluación e interpretación de resultados.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        Mi principal interés radica en temas relacionados con la movilidad urbana sostenible, economía sustentable y seguridad. Entre los objetivos está lograr una “inteligencia del valor público", la cual “tiene la potencialidad de ser un componente estratégico para la toma de decisiones y el diseño, implementación y evaluación de políticas públicas (como la lucha contra la pobreza y desigualdad económica)”. 
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        Dentro de las habilidades que he desarrollado se encuentran:
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Extraer datos, independientemente de la fuente y de su volumen.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Limpiar los datos para eliminar todo aquellos que pueda sesgar los resultados.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Procesar los datos usando métodos estadísticos como inferencia estadística, modelos de regresión, entre otros.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Diseñar experimentos adicionales en caso de ser necesario.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Crear visualizaciones gráficas de los datos más relevantes.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        - Comprender, visualizar y comunicar mis conclusiones a los no científicos de datos.
+                                    </p>
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        -  Crear soluciones basadas en datos que aumenten los beneficios, reduzcan los costos (generar valor).
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="test-pagination"></div>
+                </div>
+            </div>
+            <div class="clients" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+                <div class="swiper-container clients-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client1.png" alt="Client 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client2.png" alt="Client 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client3.png" alt="Client 3">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client4.png" alt="Client 4">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client5.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client6.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client7.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client8.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client9.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client10.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client11.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client12.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client13.png" alt="Client 5">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets_main/images/client14.png" alt="Client 5">
+                        </div>
+                    </div>
+                    <div class="test-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts End -->
+    <!-- Trust Start -->
+    <section id="Python" class="trust">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-xl-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                    <div class="title">
+                        <h6 class="title-primary">Sobre Python</h6>
+                        <h1>Científico de datos con Python</h1>
+                    </div>
+                    <p align="justify">
+                        Acelere su carrera y destaque entre la multitud agregando Python para ciencia de datos a su repertorio de habilidades. 
+                    </p>
+                    <p align="justify">
+                        Si usted es un principiante que busca comenzar una nueva carrera o un experto experimentado que busca perfeccionar sus habilidades, esta trayectoria profesional está diseñada para transformarlo rápidamente en un científico de datos calificado y listo para trabajar.
+                    </p>
+                    <p align="justify">
+                        Escriba y ejecute código real y cree una cartera que a los empleadores les encantará, todo desde la comodidad de su navegador.
+                    </p>
+                    <h5>Lo que aprenderás</h5>
+                    <ul class="list-unstyled">
+                        <li>Programación en Python básica e intermedia</li>
+                        <li>Análisis, limpieza y visualización de datos</li>
+                        <li>Procesamiento y estructuras de datos</li>
+                        <li>Control de flujo, iteración y funciones</li>
+                        <li>Minería de datos y web scraping</li>
+                        <li>Cuadernos Jupyter</li>
+                        <li>Línea de comandos / bash</li>
+                        <li>Consultas SQL</li>
+                        <li>Probabilidad y estadística</li>
+                        <li>Aprendizaje automático</li>
+                        <li>Aprendizaje profundo</li>
+                        <li>Git y API</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="Python.html" class="btn btn-primary">Empezar ahora</a>
+                    </div>
+                </div>
+                <div class="col-xl-5 gallery">
+                    <div class="row no-gutters h-100" id="lightgallery">
+                        <a href="Python.html" class="w-50 h-100 gal-img" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+                            <img class="img-fluid" src="assets_main/images/gallery1.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                        <a href="Python.html" class="w-50 h-50 gal-img" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                            <img class="img-fluid" src="assets_main/images/gallery2.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                        <a href="Python.html" class="w-50 h-50 gal-img gal-img3" data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
+                            <img class="img-fluid" src="assets_main/images/gallery3.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured End -->
+    <!-- Recent Posts Start -->
+    <section class="recent-posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Python para la ciencia de datos: Fundamentos</a></h3>
+                            <p><a href="#">Aprenda los fundamentos de la programación de Python y la ciencia de datos.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Python para la ciencia de datos: intermedio</a></h3>
+                            <p><a href="#">Aprenda importantes habilidades de ciencia de datos de Python.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Conceptos básicos de Pandas y NumPy</a></h3>
+                            <p><a href="#">Aprenda a analizar datos con las bibliotecas pandas y NumPy.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Conceptos básicos de visualización de datos</a></h3>
+                            <p><a href="#">Aprenda a explorar datos creando e interpretando gráficos de datos. Este curso se imparte utilizando Matplotlib y pandas.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Narración de historias a través de la visualización de datos</a></h3>
+                            <p><a href="#">Aprenda a comunicar ideas y a contar historias mediante la visualización de datos.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Análisis y limpieza de datos</a></h3>
+                            <p><a href="#">Aprenda a limpiar y combinar conjuntos de datos, luego practique sus habilidades.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Limpieza de datos en Python: Avanzado</a></h3>
+                            <p><a href="#">Aprenda técnicas avanzadas para limpiar datos en Python.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Tutorial del proyecto de limpieza de datos</a></h3>
+                            <p><a href="#">Aprenda a limpiar y combinar conjuntos de datos, luego practique sus habilidades.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Elementos de la línea de comandos</a></h3>
+                            <p><a href="#">Aprenda los conceptos básicos de Bash para establecer una base para trabajar la línea de comandos como un trampolín para usar la línea de comandos para la ciencia de datos.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Procesamiento de texto en la línea de comandos</a></h3>
+                            <p><a href="#">Obtenga más información sobre la línea de comandos y cómo usarla en su flujo de trabajo de ciencia de datos.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">Conceptos básicos de SQL</a></h3>
+                            <p><a href="#">Aprenda los conceptos básicos para trabajar con bases de datos SQL.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_Python.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con Python</time>
+                            <h3><a href="#">SQL intermedio para análisis de datos</a></h3>
+                            <p><a href="#">Aprenda a trabajar con bases de datos de varias tablas.</a>, <a href="#">Python</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="Python.html" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts End -->
+    <!-- Trust Start -->
+    <section id="R" class="trust">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-xl-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                    <div class="title">
+                        <h6 class="title-primary">Sobre R</h6>
+                        <h1>Científico de datos con R</h1>
+                    </div>
+                    <p align="justify">
+                        Acelere su carrera y destaque entre la multitud agregando R para ciencia de datos a su repertorio de habilidades. 
+                    </p>
+                    <p align="justify">
+                        Si usted es un principiante que busca comenzar una nueva carrera o un experto experimentado que busca perfeccionar sus habilidades, esta trayectoria profesional está diseñada para transformarlo rápidamente en un científico de datos calificado y listo para trabajar.
+                    </p>
+                    <p align="justify">
+                        Escriba y ejecute código real y cree una cartera que a los empleadores les encantará, todo desde la comodidad de su navegador.
+                    </p>
+                    <h5>Lo que aprenderás</h5>
+                    <ul class="list-unstyled">
+                        <li>Programación en R básica e intermedia</li>
+                        <li>Análisis, limpieza y visualización de datos</li>
+                        <li>Procesamiento y estructuras de datos</li>
+                        <li>Control de flujo, iteración y funciones</li>
+                        <li>Minería de datos y web scraping</li>
+                        <li>Cuadernos Jupyter</li>
+                        <li>Línea de comandos / bash</li>
+                        <li>Consultas SQL</li>
+                        <li>Probabilidad y estadística</li>
+                        <li>Aprendizaje automático</li>
+                        <li>Aprendizaje profundo</li>
+                        <li>Git y API</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="R.html" class="btn btn-primary">Empezar ahora</a>
+                    </div>
+                </div>
+                <div class="col-xl-5 gallery">
+                    <div class="row no-gutters h-100" id="lightgallery">
+                        <a href="R.html" class="w-50 h-100 gal-img" data-aos="fade-up" data-aos-delay="200" data-aos-duration="400">
+                            <img class="img-fluid" src="assets_main/images/gallery1.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                        <a href="R.html" class="w-50 h-50 gal-img" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                            <img class="img-fluid" src="assets_main/images/gallery2.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                        <a href="R.html" class="w-50 h-50 gal-img gal-img3" data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
+                            <img class="img-fluid" src="assets_main/images/gallery3.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured End -->
+    <!-- Recent Posts Start -->
+    <section class="recent-posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Introducción al análisis de datos en R</a></h3>
+                            <p><a href="#">Aprenda los conceptos básicos de R, un lenguaje de programación popular para el análisis de datos.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Estructuras de datos en R</a></h3>
+                            <p><a href="#">Aprenda sobre vectores, matrices, listas, marcos de datos y más en R.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Controle el flujo, la iteración y las funciones en R</a></h3>
+                            <p><a href="#">Mejore sus habilidades de programación en R con instrucciones if, bucles for y mucho más.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Procesamiento de datos especializado en R: cadenas y fechas</a></h3>
+                            <p><a href="#">Aprenda a trabajar con tipos de datos especializados como datos de texto, horas y fechas en R.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Visualización de datos en R</a></h3>
+                            <p><a href="#">Aprenda a usar el paquete ggplot2 para la visualización de datos exploratorios en R.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Limpieza de datos en R</a></h3>
+                            <p><a href="#">Aprenda a realizar tareas comunes de limpieza de datos.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Narración de historias a través de la visualización de datos en R</a></h3>
+                            <p><a href="#">Aprenda a comunicar ideas y a contar historias mediante la visualización de datos.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Limpieza de datos en R: Avanzado</a></h3>
+                            <p><a href="#">Aprenda técnicas avanzadas para limpiar datos en R.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Conceptos básicos de SQL</a></h3>
+                            <p><a href="#">Aprenda los conceptos básicos para trabajar con bases de datos SQL.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">SQL Intermedio en R</a></h3>
+                            <p><a href="#">Aprenda a trabajar con bases de datos de varias tablas.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">API en R</a></h3>
+                            <p><a href="#">Aprenda a adquirir datos de API y de la web.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_R.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Científico de Datos con R</time>
+                            <h3><a href="#">Web Scraping en R</a></h3>
+                            <p><a href="#">Aprenda a adquirir datos de API y la web.</a>, <a href="#">R</a>, <a href="#">Científico de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="R.html" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Posts End -->
+    <!-- Trust Start -->
+    <section id="SQL" class="trust">
+        <div class="container">
+            <div class="row">
+                <div class="offset-xl-1 col-xl-6" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                    <div class="title">
+                        <h6 class="title-primary">Sobre R</h6>
+                        <h1>Ingeniero de datos con SQL</h1>
+                    </div>
+                    <p align="justify">
+                        Acelere su carrera y destaque entre la multitud agregando SQL para ciencia de datos a su repertorio de habilidades. 
+                    </p>
+                    <p align="justify">
+                        Si usted es un principiante que busca comenzar una nueva carrera o un experto experimentado que busca perfeccionar sus habilidades, esta trayectoria profesional está diseñada para transformarlo rápidamente en un científico de datos calificado y listo para trabajar.
+                    </p>
+                    <p align="justify">
+                        Escriba y ejecute código real y cree una cartera que a los empleadores les encantará, todo desde la comodidad de su navegador.
+                    </p>
+                    <h5>Lo que aprenderás</h5>
+                    <ul class="list-unstyled">
+                        <li>Programación en Python básica e intermedia</li>
+                        <li>PostgreSQL para ingeniería de datos</li>
+                        <li>Algoritmos y estructuras de datos</li>
+                        <li>Creación de canalizaciones de datos</li>
+                        <li>Fundamentos de la estructura de datos</li>
+                        <li>Consultas SQL para análisis de datos</li>
+                        <li>Optimización para grandes conjuntos de datos usando pandas</li>
+                        <li>Recursión y árboles</li>
+                        <li>NumPy para el procesamiento de datos</li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="SQL.html" class="btn btn-primary">Empezar ahora</a>
+                    </div>
+                </div>
+                <div class="col-xl-5 gallery">
+                    <div class="row no-gutters h-100" id="lightgallery">
+                        <a href="SQL.html" class="w-50 h-100 gal-img" data-aos="fade-up"
+                            data-aos-delay="200" data-aos-duration="400">
+                            <img class="img-fluid" src="assets_main/images/gallery1.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                        <a href="SQL.html" class="w-50 h-50 gal-img" data-aos="fade-up"
+                            data-aos-delay="400" data-aos-duration="600">
+                            <img class="img-fluid" src="assets_main/images/gallery2.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                        <a href="SQL.html" class="w-50 h-50 gal-img gal-img3" data-aos="fade-up"
+                            data-aos-delay="0" data-aos-duration="600">
+                            <img class="img-fluid" src="assets_main/images/gallery3.jpg" alt="Gallery Image">
+                            <i class="fa fa-caret-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured End -->
+    <!-- Recent Posts Start -->
+    <section class="recent-posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Python para la ingeniería de datos: Fundamentos Parte I</a></h3>
+                            <p><a href="#">Aprenda sobre los fundamentos de la programación de Python en el contexto de la ingeniería de datos.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Python para la ingeniería de datos: Fundamentos Parte II</a></h3>
+                            <p><a href="#">Aprenda sobre los fundamentos de la programación de Python en el contexto de la ingeniería de datos.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Python intermedio</a></h3>
+                            <p><a href="#">Aprenda herramientas importantes para su caja de herramientas de datos de Python.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Conceptos de programación con Python</a></h3>
+                            <p><a href="#">Mejore su comprensión de cómo funciona Python.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Complejidad de algoritmos</a></h3>
+                            <p><a href="#">Aprenda a evaluar e implementar algoritmos eficientes con Python.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Conceptos básicos de SQL</a></h3>
+                            <p><a href="#">Aprenda los conceptos básicos para trabajar con bases de datos SQL.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">SQL intermedio para análisis de datos</a></h3>
+                            <p><a href="#">Aprenda a trabajar con bases de datos de varias tablas.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">PostgreSQL para ingenieros de datos</a></h3>
+                            <p><a href="#">Obtenga más información sobre la base de datos SQL PostgreSQL.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Optimización de bases de datos PostgreSQL</a></h3>
+                            <p><a href="#">Aprenda a optimizar sus bases de datos PostgreSQL.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">NumPy para ingenieros de datos</a></h3>
+                            <p><a href="#">Descubra cómo se puede utilizar NumPy para optimizar el procesamiento de sus datos.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-content text-sm-right">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Procesamiento de grandes conjuntos de datos en pandas</a></h3>
+                            <p><a href="#">Aprenda a trabajar con conjuntos de datos optimizando su flujo de trabajo de pandas, procesando datos en lotes y aumentando pandas con SQLite.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-rpost d-sm-flex align-items-center" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
+                        <div class="post-thumb">
+                            <img class="img-fluid" src="assets_main/images/Data_Science_icon_SQL.png" alt="Post 1">
+                        </div>
+                        <div class="post-content">
+                            <time datetime="2019-04-06T13:53">Ingeniero de Datos con SQL</time>
+                            <h3><a href="#">Procesamiento paralelo</a></h3>
+                            <p><a href="#">Aprenda procesamiento paralelo y MapReduce.</a>, <a href="#">SQL</a>, <a href="#">Ingeniero de datos</a></p>
+                            <a class="post-btn" href="#"><i class="fa fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="SQL.html" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust End -->
+    <!-- Pricing Start -->
+    <section id="Machine Learning" class="pricing-table">
+        <div class="container">
+            <div class="title text-center">
+                <h6 class="title-primary">Machine Learning</h6>
+                <h1 class="title-blue">Conceptos y algoritmos</h1>
+            </div>
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="0" data-aos-duration="600">
+                        <span>Básico</span>
+                        <h2>Scikit-learn</h2>
+                        <p class="desc">Modelos básicos<br> Métricas de validación</p>
+                        <p class="price">$00.00</p>
+                        <p class="price">(Gratis)</p>
+                        <p>K-vecinos más cercanos (KNN)</p>
+                        <p>Validación cruzada de k-fold</p>
+                        <p>Error cuadrático medio</p>
+                        <p>Error cuadrático medio promedio</p>
+                        <p>Optimización de hiperparámetros</p>
+                        <a href="Python.html" class="btn btn-primary">Tomar el curso</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)" d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+                        <span>Intermedio</span>
+                        <h2>Scikit-learn</h2>
+                        <p class="desc">Modelos intermedios<br> Rendimiento del modelo</p>
+                        <p class="price">$00.00</p>
+                        <p class="price">(Gratis)</p>
+                        <p>Aprendizaje supervisado y no supervisado</p>
+                        <p>Técnicas de aprendizaje sin supervisión</p>
+                        <p>Compensación de sesgo-varianza</p>
+                        <p>Detectar y evitar el sobreajuste</p>
+                        <p>Regresión lineal intermedia</p>
+                        <p>Regresión logística</p>
+                        <p>Agrupación en clústeres</p>
+                        <p>Agrupación en clústeres de k-medias</p>
+                        <p>Sensibilidad y especificidad en la clasificación</p>
+                        <a href="Python.html" class="btn btn-primary">Tomar el curso</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)" d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-pricing text-center" data-aos="fade-up" data-aos-delay="600" data-aos-duration="600">
+                        <span>Avanzado</span>
+                        <h2>Scikit-learn</h2>
+                        <p class="desc">Modelos avanzados<br> Rendimiento del modelo</p>
+                        <p class="price">$00.00</p>
+                        <p class="price">(Gratis)</p>
+                        <p>Entrenar e interpretar árboles de decisión</p>
+                        <p>Árboles para mejorar la calidad predictiva</p>
+                        <p>Entrenar e interpretar bosques aleatorios</p>
+                        <p>Bosques para mejorar la calidad predictiva</p>
+                        <p>Teoría de grafos y funciones de activación</p>
+                        <p>Entrenar e interpretar redes neuronales</p>
+                        <p>Capas ocultas para mayor rendimiento</p>
+                        <p>Funciones de activación no lineales</p>
+                        <p>Entropía y ganancia de información</p>
+                        <p>Algoritmo ID3 para hipótesis</p> 
+                        <p>Redes neuronales profundas</p>
+                        <p>Aprender a reducir el sobreajuste</p>
+                        <p>Métrica de error del área bajo la curva</p>
+                        <p>Árboles de búsqueda binaria para consultas</p>
+                        <a href="Python.html" class="btn btn-primary">Tomar el curso</a>
+                        <svg viewBox="0 0 170 193">
+                            <path fill-rule="evenodd" fill="rgb(238, 21, 21)" d="M39.000,31.999 C39.000,31.999 -21.000,86.500 9.000,121.999 C39.000,157.500 91.000,128.500 104.000,160.999 C117.000,193.500 141.000,201.000 150.000,183.000 C159.000,165.000 172.000,99.000 167.000,87.000 C162.000,75.000 170.000,63.000 152.000,45.000 C134.000,27.000 128.000,15.999 116.000,11.000 C104.000,6.000 89.000,-0.001 89.000,-0.001 L39.000,31.999 Z" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial and Clients End -->
+    <!-- Call To Action 2 Start -->
+    <section class="cta cta2" data-aos="fade-up" data-aos-delay="0">
+        <div class="container">
+            <div class="cta-content d-xl-flex align-items-center justify-content-around text-center text-xl-left">
+                <div class="content" data-aos="fade-right" data-aos-delay="200">
+                    <h2 align="center">Democratizar la Ciencia de Datos</h2>
+                    <p align="center">
+                        Navegar por el camino para aprender ciencia de datos puede llevar mucho tiempo, ser complejo y
+                        <br> francamente frustrante, pero no con <b>Democratizar la Ciencia de Datos</b>, dado que no se requiere
+                        <br> experiencia previa para comenzar, lo que significa que puede ser para cualquier persona. En 
+                        <br> consecuencia, representa una excelente opción para aquellos que busquen desarrollar o 
+                        <br> perfeccionar sus habilidades y llevar su carrera al siguiente nivel. No esperes más.
+                    </p>    
+                </div>
+                <div class="subscribe-btn" data-aos="fade-left" data-aos-delay="400" data-aos-offset="0">
+                    <a href="https://www.paypal.com/donate?hosted_button_id=QTUWP9TF9GZRJ" rel="noopener noreferrer" target="_blank" title="donar" alt="donar" class="btn btn-primary">Donar al proyecto</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call To Action 2 End -->
+    <!-- Footer Start -->
+    <footer id="Contacto" >
+        <!-- Widgets Start -->
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-widget contact-widget" data-aos="fade-up" data-aos-delay="0">
+                            <h6 class="widget-tiltle" align="center">
+                                <form action="https://www.paypal.com/donate" method="post" target="_top">
+                                    <input type="hidden" name="hosted_button_id" value="QTUWP9TF9GZRJ" />
+                                    <input type="image" src="https://www.paypalobjects.com/en_US/MX/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                                    <img alt="" border="0" src="https://www.paypal.com/en_MX/i/scr/pixel.gif" width="1" height="1" />
+                                </form>
+                            </h6>
+                            <p align="justify">Democratizar la Ciencia de Datos</b> es un proyecto de divulgación científica creado por Jeshua Romero Guadarrama con oportuno material formativo para el desarrollo de las habilidades que resultan indispensables en el mundo de la ciencia de datos.</p>
+                            <div class="media">
+                                <i class="fa fa-map-marker"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Dirección</h6>
+                                    <a href="https://www.google.com/maps/place/Facultad+de+Econom%C3%ADa+UNAM/@19.3346396,-99.1860859,17z/data=!3m1!5s0x85ce00023d1fb349:0xff95e3cb5977b87b!4m9!1m2!2m1!1sfacultad+de+econom%C3%ADa!3m5!1s0x85ce00023c6aaaab:0x92e2dd1f092f6a76!8m2!3d19.3350486!4d-99.1835409!15sChVmYWN1bHRhZCBkZSBlY29ub23DrWFaFyIVZmFjdWx0YWQgZGUgZWNvbm9tw61hkgEVdW5pdmVyc2l0eV9kZXBhcnRtZW50" rel="noopener noreferrer" target="_blank" title="dirección" alt="dirección" class="dirección">Interior S/N, C.U., Coyoacán, <br>04510 Ciudad de México, CDMX</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-envelope-o"></i>
+                                <div class="media-body ml-3">
+                                    <h6>¿Tiene alguna pregunta?</h6>
+                                    <a href="mailto:jeshua.romero@outlook.com" rel="noopener noreferrer" target="_blank" title="correo" alt="correo" class="correo">jeshua.romero@outlook.com</a>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Contáctame</h6>
+                                    <a href="https://wa.me/5618357453?text=Mucho%20gusto%20Jeshua.%20El%20motivo%20del%20presente%20mensaje%20es%20porque%20estoy%20interesado%20en%20tu%20perfil%20profesional." rel="noopener noreferrer" target="_blank" title="whatsapp" alt="whatsapp" class="whatsapp">+52 56 1835 7453</a></li>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="far fa-address-card"></i>
+                                <div class="media-body ml-3">
+                                    <h6>Perfil profesional</h6>
+                                    <a href="https://jeshuaromeroguadarrama.jeshuanomics.com/" rel="noopener noreferrer" target="_blank" title="perfil profesional" alt="perfil profesional" class="perfil profesional">jeshuaromeroguadarrama.jeshuanomics.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-widget twitter-widget" data-aos="fade-up" data-aos-delay="200">
+                            <h6 class="widget-tiltle">Tweets nuevos</h6>
+                            <div class="media">
+                                <i class="fa fa-twitter"></i>
+                                <div class="media-body ml-3">
+                                    <h6><a href="https://twitter.com/JeshuaNomics/">@JeshuaNomics,</a> Nuevo proyecto guiado en Python disponible ahora.</h6>
+                                    <span>1 Month Ago</span>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-twitter"></i>
+                                <div class="media-body ml-3">
+                                    <h6><a href="https://twitter.com/JeshuaNomics/">@JeshuaNomics,</a> Nuevo proyecto guiado en R disponible ahora.</h6>
+                                    <span>1 Month Ago</span>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-twitter"></i>
+                                <div class="media-body ml-3">
+                                    <h6><a href="https://twitter.com/JeshuaNomics/">@JeshuaNomics,</a> Nuevo proyecto guiado en SQL disponible ahora.</h6>
+                                    <span>1 Month Ago</span>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <i class="fa fa-twitter"></i>
+                                <div class="media-body ml-3">
+                                    <h6><a href="https://twitter.com/JeshuaNomics/">@JeshuaNomics,</a> Nuevo proyecto guiado en  disponible ahora.</h6>
+                                    <span>1 Month Ago</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-widget recent-post-widget" data-aos="fade-up" data-aos-delay="400">
+                            <h6 class="widget-tiltle">Últimas actualizaciones</h6>
+                            <div class="media">
+                                <a class="rcnt-img" href="https://r-para-el-analisis-e-investigacion-de-mercados.jeshuanomics.com/"><img src="assets_main/images/rcnt-post1.png" alt="Recent Post"></a>
+                                <div class="media-body ml-3">
+                                    <h6><a href="https://r-para-el-analisis-e-investigacion-de-mercados.jeshuanomics.com/">R para el análisis e investigación de mercados</a></h6>
+                                    <p><i class="fa fa-user"></i>Jeshua <i class="fa fa-eye"></i> 202 Vistas</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="rcnt-img" href="https://introduccion-a-r-grupo-de-estudios-economicos.jeshuanomics.com/"><img src="assets_main/images/rcnt-post2.png" alt="Recent Post"></a>
+                                <div class="media-body ml-3">
+                                    <h6><a href="https://introduccion-a-r-grupo-de-estudios-economicos.jeshuanomics.com/">Introducción a R: Grupo de estudios económicos</a></h6>
+                                    <p><i class="fa fa-user"></i>Jeshua <i class="fa fa-eye"></i> 20 Vistas</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="rcnt-img" href="https://analisis-politico-con-r.jeshuanomics.com/"><img src="assets_main/images/rcnt-post1.png" alt="Recent Post"></a>
+                                <div class="media-body ml-3">
+                                    <h6><a href="https://analisis-politico-con-r.jeshuanomics.com/">Análisis político con R</a></h6>
+                                    <p><i class="fa fa-user"></i>Jeshua <i class="fa fa-eye"></i> 74 Vistas</p>
+                                </div>
+                            </div>
+                            <div class="media">
+                                <a class="rcnt-img" href="https://analisis-estadistico-con-r-para-principiantes.jeshuanomics.com/"><img src="assets_main/images/rcnt-post2.png" alt="Recent Post"></a>
+                                <div class="media-body ml-3">
+                                    <h6><a href="https://analisis-estadistico-con-r-para-principiantes.jeshuanomics.com/">Análisis estadístico con R para principiantes</a></h6>
+                                    <p><i class="fa fa-user"></i>Jeshua <i class="fa fa-eye"></i> 48 Vistas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3">
+                        <div class="single-widget tags-widget" data-aos="fade-up" data-aos-delay="800">
+                            <h6 class="widget-tiltle">Eriquetas populares</h6>
+                            <a href="Python.html" rel="noopener noreferrer" target="_blank" >Python</a>
+                            <a href="R.html" rel="noopener noreferrer" target="_blank" >R</a>
+                            <a href="SQL.html" rel="noopener noreferrer" target="_blank" >SQL</a>
+                            <a href="Python.html" rel="noopener noreferrer" target="_blank" >Ciencia de Datos con Python</a>
+                            <a href="R.html" rel="noopener noreferrer" target="_blank" >Ciencia de Datos con R</a>
+                            <a href="SQL.html" rel="noopener noreferrer" target="_blank" >Ingeniero de Datos con SQL</a>
+                        </div>
+                        <div class="single-widget subscribe-widget" data-aos="fade-up" data-aos-delay="800">
+                            <h6 class="widget-tiltle">Contáctame</h6>
+                            <form action="mailto:jeshua.romero@outlook.com" method="get">
+                                <div class="input-group">
+                                    <input class="field form-control" name="subscribe" type="email" placeholder="Correo electrónico">
+                                    <span class="input-group-btn">
+                                        <button type="submit" name="submit-mail"><i class="fa fa-check"></i></button>
+                                    </span>
+                                </div>
+                            </form>
+                            <ul class="nav social-nav">
+                                <li><a href="https://www.linkedin.com/in/jeshua-romero-guadarrama/" rel="noopener noreferrer" target="_blank" title="linkedin" alt="linkedin" class="icon brands fa-lg"><i class="fab fa-linkedin-in"></i></a></li>		
+                                <li><a href="https://www.linkedin.com/in/jeshuanomics/" rel="noopener noreferrer" target="_blank" title="linkedin" alt="linkedin" class="icon brands fa-lg"><i class="fab fa-linkedin-in"></i></a></li>		
+                                <li><a href="https://twitter.com/jeshua_romero/" rel="noopener noreferrer" target="_blank" title="twitter" alt="twitter" class="icon brands fa-lg"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://twitter.com/JeshuaNomics/" rel="noopener noreferrer" target="_blank" title="twitter" alt="twitter" class="icon brands fa-lg"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.facebook.com/JeshuaNomics/" rel="noopener noreferrer" target="_blank" title="facebook" alt="facebook" class="icon brands fa-lg"><i class="fa fa-facebook-f"></i></a></li>
+                                <br><br>
+                                <li><a href="https://www.instagram.com/jeshuaromeroguadarrama/" rel="noopener noreferrer" target="_blank" title="instagram" alt="instagram" class="icon brands fa-lg"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.instagram.com/jeshuanomics/" rel="noopener noreferrer" target="_blank" title="instagram" alt="instagram" class="icon brands fa-lg"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.jeshuanomics.com/" rel="noopener noreferrer" target="_blank" title="JeshuaNomics" alt="JeshuaNomics" class="icon brands fa-lg"><i class="fas fa-rss"></i></a></li>
+                                <li><a href="https://www.datascience.jeshuanomics.com/" rel="noopener noreferrer" target="_blank" title="JeshuaNomics" alt="JeshuaNomics" class="icon brands fa-lg"><i class="fas fa-rss"></i></a></li>
+                                <li><a href="https://vk.com/jeshuanomics/" rel="noopener noreferrer" target="_blank" title="vk" alt="vk"  class="icon brands fa-lg"><i class="fab fa-vk"></i></a></li>
+                                <br><br>
+                                <li><a href="https://www.youtube.com/channel/UCY7f84mJGvMN7TF7XI4-Jgg/" rel="noopener noreferrer" target="_blank" title="youtube" alt="youtube" class="icon brands fa-lg"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://github.com/JeshuaNomics/" rel="noopener noreferrer" target="_blank" title="github" alt="github" class="icon brands fa-lg"><i class="fab fa-github"></i></a></li>
+                                <li><a href="http://jeshuanomics.tumblr.com/" rel="noopener noreferrer" target="_blank" title="tumblr" alt="tumblr" class="icon brands fa-lg"><i class="fab fa-tumblr"></i></a></li>
+                                <li><a href="https://t.me/JeshuaNomicsDataScience/" rel="noopener noreferrer" target="_blank" title="telegram" alt="telegram" class="icon brands fa-lg"><i class="fab fa-telegram-plane"></i></a></li>
+                                <li><a href="https://discord.gg/ubPY6bqgnH" rel="noopener noreferrer" target="_blank" title="discord" alt="discord" class="icon brands fa-lg"><i class="fab fa-discord"></i></a></li>
+                                <br><br>
+                                <li><a href="mailto:jeshua.romero@outlook.com" rel="noopener noreferrer" target="_blank" title="correo" alt="correo" class="icon brands fa-lg"><i class="fas fa-envelope"></i></a></li>
+                                <li><a href="https://wa.me/5618357453?text=Mucho%20gusto%20Jeshua.%20El%20motivo%20del%20presente%20mensaje%20es%20porque%20estoy%20interesado%20en%20tu%20perfil%20profesional." rel="noopener noreferrer" target="_blank" title="whatsapp" alt="whatsapp" class="icon brands fa-lg"><i class="fab fa-whatsapp"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Widgets End -->
+        <!-- Foot Note Start -->
+        <div class="foot-note">
+            <div class="container">
+                <div
+                    class="footer-content text-center text-lg-left d-lg-flex justify-content-between align-items-center">
+                    <p class="mb-0" data-aos="fade-right" data-aos-offset="0">&copy; 2021 Todos los Derechos Reservados. Diseñado por <a href="https://JeshuaNomics.com" target="_blank" class="fh5-link">JeshuaNomics</a>.</p>
+                    <p class="mb-0" data-aos="fade-left" data-aos-offset="0"><a href="#">Condiciones de uso</a><a href="#">Declaración de privacidad y seguridad</a></p>	
+                </div>
+            </div>
+        </div>
+
+    <!-- Foot Note End -->
+    </footer>
+
+    <!-- Footer Endt -->
+    <!--jQuery-->
+    <script src="assets_main/js/jquery-3.3.1.js"></script>
+
+    <!--Plugins-->
+    <script src="assets_main/js/bootstrap.bundle.js"></script>
+    <script src="assets_main/js/loaders.css.js"></script>
+    <script src="assets_main/js/aos.js"></script>
+    <script src="assets_main/js/swiper.min.js"></script>
+    <script src="assets_main/js/lightgallery-all.min.js"></script>
+
+    <!--Template Script-->
+    <script src="assets_main/js/main.js"></script>
+
+</body>
+</html>

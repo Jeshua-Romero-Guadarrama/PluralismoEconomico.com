@@ -1,0 +1,6 @@
+                                    <p data-aos="fade-up" data-aos-delay="600" data-aos-duration="600" data-aos-offset="0" align="justify" style="text-indent:20px;">
+                                        Diferencias entre la economía <b>Heterodoxa</b> y <i>Hortodoxa</i>:
+                                        Dinámica: <b>Sistemas abiertos, dinámicos, no lineales, lejos del punto de equilibrio.</b> <i>Sistemas cerrados, estáticos, lineales y en equilibrio.</i>
+                                        Agentes: <b>Modelados individualmente; usando reglas inductivas para tomar decisiones; tienen información incompleta; cometen errores y tienen prejuicios; aprenden a adaptarse a través del tiempo; heterogéneos.</b> <i>Modelados colectivamente; usan cálculos deductivos complejos para tomar decisiones; tienen toda la información necesaria; no cometen errores y no tienen prejuicios; no aprenden ni tienen necesidad de hacerlo (son ya perfectos); mayoritariamente homogéneos.</i>
+                                        Redes: <b>Modela explícitamente interacciones bi-laterales entre los agentes individuales; las redes de relaciones cambian con el tiempo.</b> <i>Asume que los agentes solamente interactúan indirectamente a través de mecanismos de mercados (por ejemplo, subastas).</i>
+                                    </p>
